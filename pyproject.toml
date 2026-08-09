@@ -1,7 +1,7 @@
 [project]
 name = "python-template"
 version = "0.1.0"
-description = "Add your description here"
+description = "Template for my personal projects"
 readme = "README.md"
 requires-python = ">=3.12"
 dependencies = []
@@ -12,3 +12,21 @@ dev = [
     "ruff>=0.16.2",
     "ty>=0.0.69",
 ]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",
+    "F",
+    "I",
+    "UP",
+    "B",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+
+[tool.ty]
