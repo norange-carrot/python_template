@@ -32,3 +32,6 @@ jobs:
 
       - name: Run tests
         run: uv run pytest
+
+      - name: Pre-commit hooks
+        run: uv run pre-commit run --all-files --show-diff-on-failure
