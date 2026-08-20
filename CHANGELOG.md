@@ -1,3 +1,9 @@
+## v0.2.1 (2026-08-20)
+
+### Refactor
+
+- remove subdirectory
+
 ## v0.2.0 (2026-08-20)
 
 ### Feat
