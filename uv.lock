@@ -453,15 +453,13 @@ wheels = [
 
 [[package]]
 name = "python-template"
-version = "0.2.0"
+version = "0.2.1"
 source = { editable = "." }
-dependencies = [
-    { name = "deptry" },
-]
 
 [package.dev-dependencies]
 dev = [
     { name = "commitizen" },
+    { name = "deptry" },
     { name = "pre-commit" },
     { name = "pytest" },
     { name = "ruff" },
@@ -469,11 +467,11 @@ dev = [
 ]
 
 [package.metadata]
-requires-dist = [{ name = "deptry", specifier = ">=0.25.1" }]
 
 [package.metadata.requires-dev]
 dev = [
     { name = "commitizen", specifier = ">=4.9.1" },
+    { name = "deptry", specifier = ">=0.25.1" },
     { name = "pre-commit", specifier = ">=4.0.0" },
     { name = "pytest", specifier = ">=9.1.1" },
     { name = "ruff", specifier = ">=0.16.2" },

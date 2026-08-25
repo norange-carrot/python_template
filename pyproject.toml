@@ -8,6 +8,7 @@ requires-python = ">=3.12"
 [project.scripts]
 tests = "tasks:tests"
 commit = "tasks:commit"
+lint = "tasks:lint"
 
 [build-system]
 requires = ["hatchling"]

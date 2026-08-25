@@ -20,3 +20,8 @@ def commit() -> None:
         print("Fix the issues above, stage your changes and try again.")  # noqa: T201
         sys.exit(1)
     sys.exit(subprocess.run(["cz", "commit", *sys.argv[1:]], check=False).returncode)  # noqa: S603, S607
+
+
+def lint() -> None:
+    """Run linters."""
+    sys.exit(subprocess.run(["ruff", "check", ".", *sys.argv[1:]], check=False).returncode)  # noqa: S603, S607
